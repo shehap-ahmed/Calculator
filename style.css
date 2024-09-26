@@ -1,0 +1,154 @@
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;    
+    display: flex;      
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(244, 165, 106), rgb(135, 206, 235),rgb(0, 128, 128));
+}
+
+
+.contianer{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 300px;
+    height: 550px;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    
+   }
+
+.screen{
+    min-height: 35%;
+    background-color:   #c3d1c8;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content:space-evenly ; 
+   flex-grow: 1;
+        
+
+} 
+
+
+.output{
+    color: #333;
+    
+    margin-bottom: 0px;
+    font-family: 'Orbitron', sans-serif;
+}
+h1{
+    margin-right: 10px;
+    
+}
+h4{
+    margin-top: 40px;
+    margin-right: 5px;
+}
+
+.problem{
+    color: aliceblue;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    width: 98%;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+   text-align: end;
+   padding-top: 3px;
+    
+    
+   
+    
+}
+.closed{
+    background-color: black;
+    color: black;
+    
+}
+
+
+ .digits{
+    padding-top: 10px;
+    width: 300px;
+    height: 450px;
+   
+ }  
+
+ .row{
+    display: flex;
+    height: 20%;
+    
+    
+ }
+.btn {
+        width: 25%;
+        margin: 6px;
+        font-size: 20px;
+        border: none;
+        border-radius: 7px;        
+        transition: background-color 0.15s ease;
+        background: #EAE9E9;
+        box-shadow: 0 3px #666;
+        transition: background 0.2s, transform 0.2s;
+        
+      }
+      .btn:hover {
+        background: #d4d4d4;
+    }
+    
+.btn:active{
+    background: #cacaca;
+   
+   
+    transform: translateY(2px);
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}      
+
+.equal{
+    width: 50%;
+    background: rgb(254, 177, 120);
+}
+.blink{
+    animation: animate 1.5s linear infinite; 
+   
+}
+@keyframes animate{ 
+    0%{ 
+      opacity: 0; 
+    } 
+    50%{ 
+      opacity: 0.7; 
+    } 
+    100%{ 
+      opacity: 0; 
+    } 
+  } 
+
+.tooMany{
+    font-size:30px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.operator{
+    background-color: rgb(0, 128, 128);
+}
+.clear,.delete{
+    background-color: rgb(135, 206, 235);
+}
